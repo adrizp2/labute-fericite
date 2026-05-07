@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoniale - Lăbuțe fericite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="cursor-tracker" class="cursor-tracker"><div class="cursor-glow"></div></div>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent);"><path d="M12 14c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-5-4c1.38 0 2.5-1.12 2.5-2.5S8.38 5 7 5s-2.5 1.12-2.5 2.5S5.62 10 7 10zm10 0c1.38 0 2.5-1.12 2.5-2.5S18.38 5 17 5s-2.5 1.12-2.5 2.5S15.62 10 17 10zm-5-6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM7.5 15c-1.38-0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm9 0c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"/></svg>
+                    <span>Lăbuțe fericite</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Acasă</a>
+                    <a href="testimonials.html" class="nav-link active">Testimoniale</a>
+                    <a href="meetings.html" class="nav-link">Întâlniri</a>
+                    <a href="donations.html" class="nav-link">Donații</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div id="auth-zone"><a href="login.html" class="btn-connect">Conectare</a></div>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Povești de la Adoptatori</h2>
+                    <p class="section-subtitle">Vezi cum s-au schimbat viețile prietenilor noștri și ale noilor lor familii.</p>
+                </div>
+                <div id="testimonials-grid" class="pet-grid">
+                    <!-- Testimonials will be rendered here -->
+                </div>
+                
+                <div style="margin-top: 5rem; background: white; padding: 3rem; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <h3 style="text-align: center; margin-bottom: 2rem;">Lasă un Testimonial</h3>
+                    <form id="testimonial-form" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label class="form-label">Numele Tău</label>
+                            <input type="text" id="test-name" class="form-input" placeholder="Numele tău" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Animalul Adoptat</label>
+                            <input type="text" id="test-pet" class="form-input" placeholder="Numele animalului" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Povestea Ta</label>
+                            <textarea id="test-text" class="form-input" rows="4" placeholder="Spune-ne despre experiența ta..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-hero">Postează Testimonialul ✨</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--border); text-align: center;">
+        <div class="container">
+            <p style="opacity: 0.6;">&copy; 2026 Lăbuțe fericite. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

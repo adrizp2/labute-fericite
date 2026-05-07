@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lăbuțe fericite</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Cursor Tracker -->
+    <div id="cursor-tracker" class="cursor-tracker">
+        <div class="cursor-glow"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="color: var(--accent);">
+                        <path d="M12 14c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-5-4c1.38 0 2.5-1.12 2.5-2.5S8.38 5 7 5s-2.5 1.12-2.5 2.5S5.62 10 7 10zm10 0c1.38 0 2.5-1.12 2.5-2.5S18.38 5 17 5s-2.5 1.12-2.5 2.5S15.62 10 17 10zm-5-6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM7.5 15c-1.38-0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm9 0c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"/>
+                    </svg>
+                    <span>Lăbuțe fericite</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Acasă</a>
+                    <a href="index.html#about" class="nav-link">Despre</a>
+                    <a href="index.html#pets" class="nav-link">Animale</a>
+                    <a href="index.html#meetings" class="nav-link">Întâlniri</a>
+                    <a href="index.html#donations" class="nav-link">Donații</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+                <a href="login.html" class="btn-connect">Conectare</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contactează-ne</h2>
+                    <p class="section-subtitle">Ai întrebări? Suntem aici să te ajutăm să găsești companionul perfect.</p>
+                </div>
+                
+                <div class="contact-grid" style="display: grid; grid-template-columns: 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto;">
+                    <!-- Contact Info -->
+                    <div class="contact-info" style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+                        <h3 style="margin-bottom: 2rem;">Informații de Contact</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="width: 40px; height: 40px; background: var(--muted); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600;">Telefon</p>
+                                    <p style="opacity: 0.7;">+40 722 123 456</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="width: 40px; height: 40px; background: var(--muted); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600;">Email</p>
+                                    <p style="opacity: 0.7;">contact@labutefericite.ro</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="width: 40px; height: 40px; background: var(--muted); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600;">Adresă</p>
+                                    <p style="opacity: 0.7;">Strada Lăcrămioarei nr. 18, București</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 3rem;">
+                            <h4 style="margin-bottom: 1rem;">Program de Lucru</h4>
+                            <p style="opacity: 0.7;">Luni - Vineri: 09:00 - 18:00</p>
+                            <p style="opacity: 0.7;">Sâmbătă: 10:00 - 14:00</p>
+                            <p style="opacity: 0.7;">Duminică: Închis</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form" style="max-width: 100%; margin: 0;">
+                        <form id="contact-form-el">
+                            <div class="form-group">
+                                <label class="form-label">Nume Complet</label>
+                                <input type="text" class="form-input" placeholder="Numele tău" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" placeholder="email@exemplu.ro" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subiect</label>
+                                <select class="form-input">
+                                    <option>Adopție</option>
+                                    <option>Donații</option>
+                                    <option>Voluntariat</option>
+                                    <option>Altele</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Mesaj</label>
+                                <textarea class="form-input" rows="6" placeholder="Cum te putem ajuta?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Trimite Mesajul</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--border); text-align: center;">
+        <div class="container">
+            <p style="opacity: 0.6;">&copy; 2026 Lăbuțe fericite. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Cursor Tracker
+        const cursorTracker = document.getElementById('cursor-tracker');
+        document.addEventListener('mousemove', (e) => {
+            gsap.to(cursorTracker, {
+                x: e.clientX - 32,
+                y: e.clientY - 32,
+                duration: 0.5,
+                ease: 'power2.out'
+            });
+        });
+
+        // Form Submit
+        const contactForm = document.getElementById('contact-form-el');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = contactForm.querySelector('button');
+                const originalText = btn.innerText;
+                btn.innerText = 'Trimis cu succes! ✓';
+                btn.style.backgroundColor = '#4ade80';
+                contactForm.reset();
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = '';
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
